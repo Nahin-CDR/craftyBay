@@ -1,8 +1,8 @@
+import 'package:ecommerce/presentation/ui/screens/auth/emailVerificationScreen.dart';
 import 'package:ecommerce/presentation/ui/screens/homeScreen.dart';
-import 'package:ecommerce/presentation/ui/utility/colorManager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
+import 'package:get/route_manager.dart';
 import '../utility/assetManager.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -19,14 +19,9 @@ class _SplashScreenState extends State<SplashScreen> {
     gotoNextScreen();
     super.initState();
   }
-
   void gotoNextScreen(){
     Future.delayed(const Duration(seconds: 2)).then((value){
-      Navigator.pushAndRemoveUntil(
-          context,
-          MaterialPageRoute(
-              builder: (context)=> const HomeScreen()
-          ),(route) => false);
+      Get.offAll(const EmailVerificationScreen());
     });
   }
 
