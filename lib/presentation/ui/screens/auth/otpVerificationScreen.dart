@@ -1,5 +1,7 @@
+import 'package:ecommerce/presentation/ui/screens/auth/completeProfileScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import '../../utility/assetManager.dart';
 import '../../utility/colorManager.dart';
@@ -84,7 +86,9 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                           borderRadius: BorderRadius.circular(8.0)
                       ),
                     ),
-                    onPressed: (){},
+                    onPressed: (){
+                      Get.offAll(const CompleteProfileScreen());
+                    },
                     child: const Text("Next"),
                   ),
                 ),
