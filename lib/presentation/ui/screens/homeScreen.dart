@@ -1,8 +1,11 @@
 import 'package:ecommerce/presentation/ui/utility/assetManager.dart';
+import 'package:ecommerce/presentation/ui/utility/colorManager.dart';
 import 'package:ecommerce/presentation/ui/widgets/home/homeSlider.dart';
+import 'package:ecommerce/presentation/ui/widgets/home/sectionHeader.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+import '../widgets/categoryCard.dart';
 import '../widgets/circularIconButton.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -57,7 +60,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               const SizedBox(height: 20),
-              const HomeSlider()
+              const HomeSlider(),
+              SectionHeader(onTap: (){}, title: "Categories"),
+              const CategoryCard(),
+              const SizedBox(height: 8),
+              SectionHeader(onTap: (){}, title: "Popular"),
             ],
           ),
         )
@@ -65,5 +72,6 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+
 
 
