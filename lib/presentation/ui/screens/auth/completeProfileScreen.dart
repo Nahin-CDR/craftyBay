@@ -1,5 +1,7 @@
+import 'package:ecommerce/presentation/ui/screens/homeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 import '../../utility/assetManager.dart';
 import '../../utility/colorManager.dart';
 
@@ -89,7 +91,9 @@ class _CompleteProfileScreenState extends State<CompleteProfileScreen> {
                           borderRadius: BorderRadius.circular(8.0)
                       ),
                     ),
-                    onPressed: (){},
+                    onPressed: (){
+                      Get.offAll(const HomeScreen());
+                    },
                     child: const Text("Next"),
                   ),
                 ),

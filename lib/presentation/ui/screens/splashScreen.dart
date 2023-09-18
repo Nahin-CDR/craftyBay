@@ -1,5 +1,4 @@
 import 'package:ecommerce/presentation/ui/screens/auth/emailVerificationScreen.dart';
-import 'package:ecommerce/presentation/ui/screens/homeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/route_manager.dart';

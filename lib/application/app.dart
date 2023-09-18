@@ -1,3 +1,4 @@
+import 'package:ecommerce/presentation/ui/screens/homeScreen.dart';
 import 'package:ecommerce/presentation/ui/screens/splashScreen.dart';
 import 'package:ecommerce/presentation/ui/utility/assetManager.dart';
 import 'package:ecommerce/presentation/ui/utility/colorManager.dart';
@@ -16,10 +17,11 @@ class _CraftBayState extends State<CraftBay> {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       home:MaterialApp(
-        theme: ThemeData(
-         primarySwatch: MaterialColor(ColorsManager.primaryColorCode,ColorPalette().color),
-        ),
-        home: const SplashScreen(),
+          debugShowCheckedModeBanner: false,
+          theme: ThemeData(
+            primarySwatch: MaterialColor(ColorsManager.primaryColorCode,ColorPalette().color),
+          ),
+          home: const HomeScreen()//const SplashScreen(),
       ),
     );
   }
