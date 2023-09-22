@@ -7,6 +7,7 @@ import 'package:flutter_svg/svg.dart';
 
 import '../widgets/categoryCard.dart';
 import '../widgets/circularIconButton.dart';
+import '../widgets/home/productCard.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -17,7 +18,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -65,6 +66,40 @@ class _HomeScreenState extends State<HomeScreen> {
               const CategoryCard(),
               const SizedBox(height: 8),
               SectionHeader(onTap: (){}, title: "Popular"),
+              SizedBox(
+                height: 170,
+                child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: 20,
+                    itemBuilder:(context,index){
+                      return const ProductCard();
+                    }
+                ),
+              ),
+              const SizedBox(height: 8),
+              SectionHeader(onTap: (){}, title: "Special"),
+              SizedBox(
+                height: 170,
+                child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: 20,
+                    itemBuilder:(context,index){
+                      return const ProductCard();
+                    }
+                ),
+              ),
+              const SizedBox(height: 8),
+              SectionHeader(onTap: (){}, title: "New"),
+              SizedBox(
+                height: 170,
+                child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: 20,
+                    itemBuilder:(context,index){
+                      return const ProductCard();
+                    }
+                ),
+              ),
             ],
           ),
         )
@@ -72,6 +107,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+
 
 
 

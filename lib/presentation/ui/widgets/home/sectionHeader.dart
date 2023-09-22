@@ -1,3 +1,4 @@
+import 'package:ecommerce/presentation/ui/utility/colorManager.dart';
 import 'package:flutter/material.dart';
 
 class SectionHeader extends StatelessWidget {
@@ -22,7 +23,7 @@ class SectionHeader extends StatelessWidget {
         ),
         TextButton(
             onPressed: onTap,
-            child: const Text("See All")
+            child: const Text("See All",style: TextStyle(color: ColorsManager.appPrimaryColor))
         )
       ],
     );

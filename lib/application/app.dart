@@ -21,7 +21,7 @@ class _CraftBayState extends State<CraftBay> {
           theme: ThemeData(
             primarySwatch: MaterialColor(ColorsManager.primaryColorCode,ColorPalette().color),
           ),
-          home: const HomeScreen()//const SplashScreen(),
+          home: const SplashScreen(),
       ),
     );
   }
