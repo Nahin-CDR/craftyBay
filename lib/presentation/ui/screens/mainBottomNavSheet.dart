@@ -1,4 +1,6 @@
+import 'package:ecommerce/presentation/ui/screens/categoryListScreen.dart';
 import 'package:ecommerce/presentation/ui/screens/homeScreen.dart';
+import 'package:ecommerce/presentation/ui/screens/wishListScreen.dart';
 import 'package:ecommerce/presentation/ui/utility/colorManager.dart';
 import 'package:flutter/material.dart';
 
@@ -13,9 +15,9 @@ class _MainBottomNavSheetState extends State<MainBottomNavSheet> {
   int selectedIndex = 0;
   List<Widget>screenList = [
     const HomeScreen(),
+    const CategoryListScreen(),
     const HomeScreen(),
-    const HomeScreen(),
-    const HomeScreen(),
+    const WishListScreen()
   ];
   @override
   Widget build(BuildContext context) {
@@ -33,7 +35,7 @@ class _MainBottomNavSheetState extends State<MainBottomNavSheet> {
             setState(() {});
           }
         },
-        items: [
+        items: const [
           BottomNavigationBarItem(
               icon: Icon(Icons.home_filled),
               label: "Home"

@@ -1,20 +1,21 @@
-import 'package:ecommerce/presentation/ui/widgets/home/productCard.dart';
 import 'package:flutter/material.dart';
 
-class CategoryListScreen extends StatefulWidget {
-  const CategoryListScreen({super.key});
+import '../widgets/home/productCard.dart';
+
+class WishListScreen extends StatefulWidget {
+  const WishListScreen({super.key});
 
   @override
-  State<CategoryListScreen> createState() => _CategoryListScreenState();
+  State<WishListScreen> createState() => _WishListScreenState();
 }
 
-class _CategoryListScreenState extends State<CategoryListScreen> {
+class _WishListScreenState extends State<WishListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        title: const Text("Categories",
+        title: const Text("WishList",
             style: TextStyle(
                 color: Colors.black
             )
