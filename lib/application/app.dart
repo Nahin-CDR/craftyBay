@@ -2,6 +2,7 @@ import 'package:ecommerce/presentation/ui/screens/homeScreen.dart';
 import 'package:ecommerce/presentation/ui/screens/splashScreen.dart';
 import 'package:ecommerce/presentation/ui/utility/assetManager.dart';
 import 'package:ecommerce/presentation/ui/utility/colorManager.dart';
+import 'package:ecommerce/presentation/ui/widgets/home/mainBottomNavSheet.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -21,7 +22,7 @@ class _CraftBayState extends State<CraftBay> {
           theme: ThemeData(
             primarySwatch: MaterialColor(ColorsManager.primaryColorCode,ColorPalette().color),
           ),
-          home: const SplashScreen(),
+          home: MainBottomNavSheet()//const SplashScreen(),
       ),
     );
   }

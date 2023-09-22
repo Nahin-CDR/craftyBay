@@ -1,6 +1,7 @@
 import 'package:ecommerce/presentation/ui/utility/assetManager.dart';
 import 'package:ecommerce/presentation/ui/utility/colorManager.dart';
 import 'package:ecommerce/presentation/ui/widgets/home/homeSlider.dart';
+import 'package:ecommerce/presentation/ui/widgets/home/mainBottomNavSheet.dart';
 import 'package:ecommerce/presentation/ui/widgets/home/sectionHeader.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -107,7 +108,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
-
-
-
