@@ -1,3 +1,4 @@
+import 'package:ecommerce/presentation/ui/screens/categoryListScreen.dart';
 import 'package:ecommerce/presentation/ui/utility/assetManager.dart';
 import 'package:ecommerce/presentation/ui/utility/colorManager.dart';
 import 'package:ecommerce/presentation/ui/widgets/home/homeSlider.dart';
@@ -5,6 +6,7 @@ import 'package:ecommerce/presentation/ui/widgets/home/mainBottomNavSheet.dart';
 import 'package:ecommerce/presentation/ui/widgets/home/sectionHeader.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 
 import '../widgets/categoryCard.dart';
 import '../widgets/circularIconButton.dart';
@@ -63,10 +65,12 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               const SizedBox(height: 20),
               const HomeSlider(),
-              SectionHeader(onTap: (){}, title: "Categories"),
+              SectionHeader(onTap: (){
+                Get.to(const CategoryListScreen());
+              }, title: "Categories"),
               const CategoryCard(),
               const SizedBox(height: 8),
-              SectionHeader(onTap: (){}, title: "Popular"),
+              SectionHeader(onTap: (){Get.to(const CategoryListScreen());}, title: "Popular"),
               SizedBox(
                 height: 170,
                 child: ListView.builder(
@@ -78,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               const SizedBox(height: 8),
-              SectionHeader(onTap: (){}, title: "Special"),
+              SectionHeader(onTap: (){Get.to(const CategoryListScreen());}, title: "Special"),
               SizedBox(
                 height: 170,
                 child: ListView.builder(
@@ -90,7 +94,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               const SizedBox(height: 8),
-              SectionHeader(onTap: (){}, title: "New"),
+              SectionHeader(onTap: (){Get.to(const CategoryListScreen());}, title: "New"),
               SizedBox(
                 height: 170,
                 child: ListView.builder(
