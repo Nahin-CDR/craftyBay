@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../widgets/home/productCard.dart';
 
 
@@ -17,9 +16,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: const Text("ProductList",
-            style: TextStyle(
-                color: Colors.black
-            )
+            style: TextStyle(color: Colors.black)
         ),
         elevation: 0,
         leading: const BackButton(

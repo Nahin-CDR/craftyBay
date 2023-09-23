@@ -1,7 +1,4 @@
-import 'package:ecommerce/presentation/ui/screens/categoryListScreen.dart';
-import 'package:ecommerce/presentation/ui/screens/homeScreen.dart';
-import 'package:ecommerce/presentation/ui/screens/splashScreen.dart';
-import 'package:ecommerce/presentation/ui/utility/assetManager.dart';
+import 'package:ecommerce/application/stateHolderBinder.dart';
 import 'package:ecommerce/presentation/ui/utility/colorManager.dart';
 import 'package:ecommerce/presentation/ui/screens/mainBottomNavSheet.dart';
 import 'package:flutter/material.dart';
@@ -17,6 +14,7 @@ class _CraftBayState extends State<CraftBay> {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      initialBinding: StateHolderBinder(),
       debugShowCheckedModeBanner: false,
       home:MaterialApp(
           debugShowCheckedModeBanner: false,
