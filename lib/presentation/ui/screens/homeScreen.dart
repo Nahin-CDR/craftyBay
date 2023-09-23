@@ -6,7 +6,6 @@ import 'package:ecommerce/presentation/ui/widgets/home/sectionHeader.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-
 import '../widgets/categoryCard.dart';
 import '../widgets/circularIconButton.dart';
 import '../widgets/home/productCard.dart';
